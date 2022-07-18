@@ -532,7 +532,7 @@ FluxRegister::Reflux (MultiFab&       mf,
 {
     for (OrientationIter fi; fi; ++fi)
     {
-        const Orientation& face = fi();
+        const Orientation face = fi();
         Reflux(mf, volume, face, scale, scomp, dcomp, nc, geom);
     }
 }
