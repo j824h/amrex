@@ -41,7 +41,7 @@ PlotFileDataImpl::PlotFileDataImpl (std::string const& plotfile_name)
         m_prob_size[i] = m_prob_hi[i] - m_prob_lo[i];
     }
 
-    m_ref_ratio.resize(m_nlevels, 0);
+    m_ref_ratio.resize(m_finest_level, 0);
     for (int i = 0; i < m_finest_level; ++i) {
         is >> m_ref_ratio[i];
     }
